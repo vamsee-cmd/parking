@@ -9,7 +9,6 @@ function search(){
             var name= tdname.textContent || tdname.innerHTML;
             var vehile=tdvehicle.textContent || tdvehicle.innerHTML;
         if(name.toUpperCase().indexOf(filter)>-1 || vehile.toUpperCase().indexOf(filter)>-1){
-            console.log(name);
             tr[i].style.display="";
         }else{
             tr[i].style.display="none";

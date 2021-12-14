@@ -52,7 +52,6 @@
 <td>5:00pm</td>
 <td><input type="submit" name="checkout" class="btn-danger"  value="checkout"></td>
 </tr>
-
 <tr>
 <td>Sri Kavya</td>
 <td>TS 21 F 4595</td>
