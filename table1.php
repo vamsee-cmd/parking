@@ -10,7 +10,7 @@
     <br>
     <section class="page-section" id="services">
     <div class="container">
-    <input type="text" id="filter" class="form-control" placeholder="name" onkeyup="search()"><br>
+    <input type="text" id="filter" class="form-control" placeholder="name or vehicle number" onkeyup="search()"><br>
 <table class="table table-striped" id="myTable">
 <tr>
 <th>NAME</th>

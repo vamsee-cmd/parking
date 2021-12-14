@@ -3,10 +3,12 @@ function search(){
     var myTable=document.getElementById("myTable");
     var tr=myTable.getElementsByTagName('tr');
     for(var i=0;i<tr.length;i++){
-        var td=tr[i].getElementsByTagName('td')[0];
-        if(td){
-            var name= td.textContent || td.innerHTML;
-        if(name.toUpperCase().indexOf(filter)>-1){
+        var tdname=tr[i].getElementsByTagName('td')[0];
+        var tdvehicle=tr[i].getElementsByTagName('td')[1];
+        if(tdname || tdvehicle){
+            var name= tdname.textContent || tdname.innerHTML;
+            var vehile=tdvehicle.textContent || tdvehicle.innerHTML;
+        if(name.toUpperCase().indexOf(filter)>-1 || vehile.toUpperCase().indexOf(filter)>-1){
             console.log(name);
             tr[i].style.display="";
         }else{
