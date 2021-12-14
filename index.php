@@ -178,6 +178,8 @@
                     
                     <?php if(isset($_POST['submitButton'])){
                         
+
+                        
                     $conn=new mysqli('localhost','root','','parking');
                    if ($conn->connect_error) {
                     die("Connection failed: "
