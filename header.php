@@ -18,7 +18,7 @@
         <style>
         .ican{
             width: 35%;
-            border-radius :50%;
+            border-radius :20%;
         }
         </style>
     </head>

@@ -144,7 +144,7 @@
                     <h2 class="section-heading text-uppercase">Contact Us</h2>
                     <h3 class="section-subheading text-muted">Drop your kind feedback/suggestions/queries.</h3>
                 </div>
-                <form id="contactForm" data-sb-form-api-token="API_TOKEN" method="post" value="bdconnect.php">
+                <form id="contactForm" data-sb-form-api-token="API_TOKEN" method="post" action="index.php">
                     <div class="row align-items-stretch mb-5">
                         <div class="col-md-6">
                             <div class="form-group">
