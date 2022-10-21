@@ -118,7 +118,7 @@
                         <div class="team-member">
                             <img class="mx-auto rounded-circle" src="assets/img/team/12.jpg" alt="..." />
                             <h4>P Mahadeva Sairam</h4>
-                            <p class="text-muted">Lead UI/UX Designer</p>
+                            <p class="text-muted">Lead Frontend Designer</p>
                             <a class="btn btn-dark btn-social mx-2" href="#!"><i class="fab fa-github"></i></a>
                             <a class="btn btn-dark btn-social mx-2" href="#!"><i class="fa fa-envelope"></i></a>
                             <a class="btn btn-dark btn-social mx-2" href="#!"><i class="fab fa-linkedin-in"></i></a>
