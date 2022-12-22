@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+      integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+  <body>
+    <div
+      class="h-screen"
+      style="
+        background: linear-gradient(123deg, #fffcac 0%, #ffffff 67%),
+          linear-gradient(180deg, #d8d8d8 0%, #6b0000 100%),
+          linear-gradient(
+            142deg,
+            #f9f5f0 0%,
+            #f9f5f0 33%,
+            #f2ead3 calc(33% + 1px),
+            #f2ead3 56%,
+            #f4991a calc(56% + 1px),
+            #f4991a 62%,
+            #321313 calc(62% + 1px),
+            #321313 100%
+          );
+        background-blend-mode: multiply, overlay, normal;
+      "
+    >
+      <div class="flex justify-center items-center h-screen">
+        <div class="w-96 p-6 shadow-lg bg-white rounded-md">
+          <h1 class="text-3xl block text-center font-semibold">
+            <i class="fa-solid fa-user"></i> Register
+          </h1>
+          <hr class="mt-3" />
+          <div class="mt-3">
+            <label for="username" class="block text-base mb-2">E-mail</label>
+            <input
+              type="text"
+              id="username"
+              class="border w-full text-base px-2 py-1 focus:outline-none focus:ring-0 focus:border-gray-600"
+              placeholder="Enter E-mail..."
+            />
+          </div>
+          <div class="mt-3">
+            <label for="password" class="block text-base mb-2"
+              >Create New Password</label
+            >
+            <input
+              type="password"
+              id="password"
+              class="border w-full text-base px-2 py-1 focus:outline-none focus:ring-0 focus:border-gray-600"
+              placeholder="Enter Password..."
+            />
+          </div>
+          <div class="mt-3">
+            <label for="password" class="block text-base mb-2"
+              >Retype New Password</label
+            >
+            <input
+              type="password"
+              id="password"
+              class="border w-full text-base px-2 py-1 focus:outline-none focus:ring-0 focus:border-gray-600"
+              placeholder="Enter Password..."
+            />
+          </div>
+          <div class="mt-5">
+            <button
+              type="submit"
+              class="border-2 border-yellow-500 bg-yellow-500 text-white py-1 w-full rounded-md hover:bg-transparent hover:text-yellow-500 font-semibold"
+            >
+              <i class="fa-solid fa-right-to-bracket"></i>&nbsp;&nbsp;Create
+              Account
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
