@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Dashboard</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="js/dashboard.js"></script>
+  </head>
+  <body>
+    <div
+      class="flex justify-between items-center bg-[#212529] h-20 w-full px-10"
+      id="navbar"
+    >
+      <a
+        href="index.html"
+        class="cursor-pointer text-2xl text-amber-400 font-sans font-semibold hover:text-white"
+        >EZ-PARK
+      </a>
+      <button
+        class="font-semibold text-[#212529] bg-amber-400 p-1.5 rounded-md hover:bg-white"
+      >
+        Logout
+      </button>
+    </div>
+    <div class="flex">
+      <div class="bg-[#212529] h-screen w-1/5">
+        <div class="flex flex-col">
+          <div
+            id="profile"
+            class="cursor-pointer text-white py-5 px-10 font-sans font-semibold hover:bg-amber-400 active:bg-amber-400"
+          >
+            <button id="profile" onclick="view(this.id)">Profile</button>
+          </div>
+          <div
+            class="cursor-pointer text-white py-5 px-10 font-sans font-semibold hover:bg-amber-400"
+          >
+            <button id="booking" onclick="view(this.id)">Booking</button>
+          </div>
+          <div
+            class="cursor-pointer text-white py-5 px-10 font-sans font-semibold hover:bg-amber-400"
+          >
+            <button id="history" onclick="view(this.id)">History</button>
+          </div>
+        </div>
+      </div>
+      <div class="w-full" id="profile-view">
+        <h1 class="font-semibold m-3 text-2xl">Profile</h1>
+        <hr />
+        <div class="grid grid-cols-2">
+          <div class="m-5">
+            <h2 class="py-2">Name:</h2>
+            <input
+              class="border-2 w-full text-base px-2 py-1 focus:outline-none focus:ring-0 focus:border-amber-400"
+              type="text"
+              name=""
+              id=""
+            />
+            <h2 class="py-2">Email:</h2>
+            <input
+              class="border-2 w-full text-base px-2 py-1 focus:outline-none focus:ring-0 focus:border-amber-400"
+              type="text"
+              name=""
+              id=""
+            />
+            <h2 class="py-2">Phone no.:</h2>
+            <input
+              class="border-2 w-full text-base px-2 py-1 focus:outline-none focus:ring-0 focus:border-amber-400"
+              type="text"
+              name=""
+              id=""
+            />
+          </div>
+          <div class="m-5">
+            <h2 class="py-2">Name:</h2>
+            <input
+              class="border-2 w-full text-base px-2 py-1 focus:outline-none focus:ring-0 focus:border-amber-400"
+              type="text"
+              name=""
+              id=""
+            />
+            <h2 class="py-2">Email:</h2>
+            <input
+              class="border-2 w-full text-base px-2 py-1 focus:outline-none focus:ring-0 focus:border-amber-400"
+              type="text"
+              name=""
+              id=""
+            />
+            <h2 class="py-2">Phone no.:</h2>
+            <input
+              class="border-2 w-full text-base px-2 py-1 focus:outline-none focus:ring-0 focus:border-amber-400"
+              type="text"
+              name=""
+              id=""
+            />
+            <div class="grid justify-items-end">
+              <button
+                class="border-2 border-amber-400 mt-3 p-2 rounded-md bg-amber-400 font-semibold text-[#212529] hover:bg-white"
+              >
+                Edit Profile
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div id="booking-view" class="w-full hidden">
+        <h1 class="font-semibold m-3 text-2xl">Booking</h1>
+        <hr />
+        <div class="flex flex-col">
+          <div class="m-5">
+            <span>Select State:</span>
+            <select
+              class="w-48 h-10 m-3 border-2 border-amber-400"
+              name="States"
+              id="states"
+              onchange="showDistricts(this.id,'districts')"
+            >
+              <option value="select">select</option>
+              <option value="telangana">Telangana</option>
+              <option value="andhrapradesh">Andhrapradesh</option>
+            </select>
+          </div>
+          <div class="m-5">
+            <span>Select District:</span>
+            <select
+              class="w-48 h-10 m-3 border-2 border-amber-400"
+              name="district"
+              id="districts"
+              onchange="showPlaces(this.id,'places')"
+            ></select>
+          </div>
+          <div class="m-5">
+            <span>Select place:</span>
+            <select
+              class="w-48 h-10 m-3 border-2 border-amber-400"
+              name="places"
+              id="places"
+            ></select>
+          </div>
+        </div>
+      </div>
+      <div id="history-view" class="w-full hidden">
+        <h1 class="font-semibold m-3 text-2xl">History</h1>
+        <hr />
+        <div id="fetch-history">
+          <table>
+            <tr>
+              <td></td>
+            </tr>
+          </table>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
